@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+/* @font-face {
+  font-family: "coinbase-regular";
+  src: url("./assets/fonts/Minecrafter.Alt.ttf");
+}
+@font-face {
+  font-family: "coinbase-medium";
+  src: url("./assets/fonts/Minecrafter.Reg.ttf");
+} */
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hero-bg{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./assets/image/minecraft 1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+@media screen and (max-width:428px) {
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+}
+
+
+.pagination {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 17px;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.pagination .page-num {
+  cursor: pointer;
+  color: #673ab8;
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.pagination .page-num:hover {
+  color: #FF602E;
+}
+
+.pagination .active-item {
+  color: #FF602E;
+}
+
+.pagination .page-num1 {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #00A529;
+  color: #fff;
+}
+
+.pagination .page-num1:hover {
+  background: #09ee42;
+}
